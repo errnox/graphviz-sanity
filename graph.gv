@@ -1,0 +1,14 @@
+digraph "graph" {
+	node [shape=box]
+		pete [label="Pete Smith"]
+		ann [label="Ann Miller"]
+		penny [label="Penny Smarts"]
+		derek [label="Derek Bowy"]
+		lindsay [label="Lindsay Miller"]
+			pete -> ann [label=knows]
+			ann -> lindsay [label="know each other" dir=both]
+			derek -> ann [label="has met"]
+			derek -> pete [label=knows]
+			pete -> derek [label="has heard of"]
+			penny -> pete [label=knows]
+}
